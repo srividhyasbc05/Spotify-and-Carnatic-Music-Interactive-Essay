@@ -1,0 +1,43 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.playlist_container{
+    background-color: #DBBEA1;
+    display: flex;
+    flex-direction: column;
+    padding:2vw;
+    width: 20vw;
+    margin: 10vw 5vw 10vw 5vw;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.250);
+}
+.playlistsari{
+    display: flex;
+    padding-bottom: 1vw;
+    width: 100%;
+    border-top: 4px solid #DB504A;
+}
+#playlistimg{
+    justify-self: center;
+    background-color: black;
+    width:15vw;
+    height:15vw;
+    margin: 1vw;
+    border-radius: 2vw;
+}
+#btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+img{
+    width: 4vw;
+}
+img:hover{
+    scale:1.1;
+    cursor: pointer;
+}

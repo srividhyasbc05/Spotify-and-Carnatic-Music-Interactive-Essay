@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lack of Inclusion in Spotify’s Metadata and its Effects on the Population:</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subpgs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Palanquin+Dark:wght@400;500;600;700&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="banner">
+        <a href="carnatic.html">
+            back
+        </a>
+        <header>
+            How can AI learn Carnatic Music?
+        </header>
+        <a href="spotifycarnatic.html">
+            next
+        </a>
+    </div>
+        <div class="info" style="width: 70%;">
+            <div class="sariBorder">
+                <div class="sariBorder">
+                    <content>
+                        <h4 class="palanquin-dark-bold">Approach 1</h4>
+                        <p class="palanquin-regular">
+                            The research paper on computational approaches to understanding melody (ragam) in Carnatic music dives into how other researchers have used machine learning to classify ragams. 
+                            One group used <strong>HMM models</strong> to recognize ragams. 
+                            HMM stands for <strong>Hidden Markov Model</strong>, which essentially consists of hidden states and observed information, storing them as variables. 
+                            According to this <a href=https://www.geeksforgeeks.org/hidden-markov-model-in-machine-learning>article</a> by GeeksforGeeks, “The hidden states are the underlying variables that generate the observed data, but they are not directly observable.’ while the “ observations are the variables that are measured and observed.” 
+                            The model uses this information and probability statistics to determine and predict the relationship between the hidden and observed variables. 
+                            The probability statistics used to determine the relationship are classified as transition probabilities or emission probabilities. 
+                            Transition probabilities “The observations are the variables that are measured and observed.” while emission probabilities “describe the probability of observing an output given a hidden state”. 
+                            These researchers provide the rules to form a melodic sequence for a given ragam based on musicology literature. 
+                            Since the number of notes is finites, the researchers concluded that the HMM models “should be good at capturing those rules in note transitions imposed by arohana and avarohana patterns” (Koduri et. al 2011). 
+                            These were most promising of all the other approaches they reviewed. 
+                        </p>
+                    </content>
+                </div>
+            </div>
+        </div>
+        <div class="info" style="width: 70%;">
+            <div class="sariBorder">
+                <div class="sariBorder">
+                    <content>
+                        <h4 class="palanquin-dark-bold">Approach 2</h4>
+                        <p class="palanquin-regular">
+                            A project by Abhinav Balasubramanian at NVIDIA titled <a href="https://www.researchgate.net/profile/Abhinav-Balasubramanian-2/publication/388841572_AI-Powered_Musical_Fusion_Integrating_Carnatic_Music_with_Global_Genres/links/67a99fcd4c479b26c9dba3a3/AI-Powered-Musical-Fusion-Integrating-Carnatic-Music-with-Global-Genres.pdf">“AI-Powered Musical Fusion: Integrating Carnatic Music with Global Genres”</a>  attempts to integrate classical music with contemporary music to foster innovation and cultural exchange. 
+                            It proposes a framework to align data from carnatic ragas with western musical attributes as well as an evaluation strategy composed of objective and subjective metrics to generate coherent and appealing music. 
+                            The dataset used for this model is a comprehensive collection of ragams, talams, and compositions that are annotated with the arohanam, avarohanam, and its characteristic phrases. 
+                            The dataset also has information of the prominent notes of the ragam, gamakkams, and the <strong>angas</strong> (components) of the talam like how it is played and the cadence <strong>(gathi)</strong>. 
+                            The compositions themselves include various types such as kritis and varnams with annotations of the lyrics, melody, and rhythm. 
+                            Balasubramanian uses melodic mapping to align the scales of Carnatic music with the harmonic structures of western music, where “Each raga is systematically mapped to its closest Western scale or mode through intervallic analysis, which examines the pitch intervals between notes in the raga and matches them with equivalent Western frameworks” (Balasubramanian ). 
+                            For example, the ragam Shankarabaranam, which is similar to the <strong>Western Ionian mode</strong>, can be directly aligned and other ragams can build off of that relationship. 
+                            A similar structure is used to set rhythmic structure. Balasubramanian explains, “Tala integration involves synchronizing the beats of traditional Carnatic talas, such as adi tala (an eight-beat cycle), with standard global time signatures like 4/4. 
+                            This is achieved through subdivision techniques, where each beat of the tala is mapped to a corresponding beat in the global rhythm, or by strategically aligning accent patterns to maintain structural coherence.” (Balasubramanian). 
+                            He then rounds this out by incorporating dynamic layering techniques that generate instrumental arrangements that factor in contextual features of instruments to pair them with the generated music. 
+                        </p>
+                    </content>
+                </div>
+            </div>
+        </div>
+        <button id="firstpg" class="palanquin-dark-regular" onclick="location.href='spotifycarnatic.html'"> So how does Spotify analyze its music? -> </button>
+    </main>
+    <div class="banner"> 
+        <footer>
+            <a href="carnatic.html">
+                back
+            </a>
+            <a href="spotifycarnatic.html" >
+                next
+            </a>
+        </footer>
+    </div>
+</body>
+    </html>

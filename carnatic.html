@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lack of Inclusion in Spotify’s Metadata and its Effects on the Population:</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subpgs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Palanquin+Dark:wght@400;500;600;700&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="banner">
+            <a href="musicAlgorithms.html">
+            back
+         </a>
+         <header>
+         Carnatic Music and how it works
+         </header>
+         <a href="aicarnatic.html">
+             next
+         </a>
+        </div>
+        <div id="carnatic1">
+            <div class="info" style="width: 70%;">
+                <div class="sariBorder">
+                    <div class="sariBorder">
+                        <content>
+                            <h4 class="palanquin-dark-bold">Ragam:</h4>
+                            <p class="palanquin-regular">
+                                Ragam can be defined as the melody of the musical piece. 
+                                It is a set of rules that creates a melodic framework. 
+                                The reason to define it this way is because certain ragams may have the same notes, but depending on the rules, can produce different music.
+                                A ragam is a set of notes <strong>(swarams)</strong> whose rules follow their ascending and descending progressions <strong>(arohanam/ and avarohanam)</strong>. 
+                                There are 12 notes in every octave of carnatic music. 
+                                Of the 7 swarams: 
+                                <br>
+                                <strong>Sa (low tonic), Ri, Ga, Ma, Pa, Da, Ni, and Sa (high tonic)</strong>  
+                                <br>
+                                the notes Ri, Ga, Ma, Da, and Ni have two variations. 
+                                These do have official names but for the sake of this overview, one can simplify it and say that one of those two variations is a relatively ‘happy’ note, while the other a ‘sad’ note. 
+                                These terms can also be called raga, swara, arohana, and avarohana, however I will be using the terms I grew up with. 
+                                Each ragam has a few characteristic phrases that are meant to be used to identify the ragams of compositions.
+                                They are known as <strong>swara sancharas</strong>
+                                For example, in the ragam Neelambari, there is a very common swaram pattern in the varnam Senthil Mevum notated as 
+                                <br>
+                                <strong>S P m G m | S N P m G m | S S N p m G m R P m|</strong>
+                                <br>
+                                 that is used often in improvisation and even in film songs. 
+                                The particular fall from N to P is the characteristic of this ragam. 
+                                These phrases are crucial in conveying the feeling of the ragam. 
+                                These feelings in particular may be subjective but for me, in both the varnam aforementioned and the film song Vaasi Vaasi from the movie Thiruvilaiyadal convey a pleading, yearning emotion to me.
+                            </p>
+                        </content>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carnatic2">
+            <div class="info" style="width: 30%;">
+                <div class="sariBorder">
+                    <div class="sariBorder">
+                        <content>
+                            <h4 class="palanquin-dark-bold">Shruti:</h4>
+                            <p class="palanquin-regular">
+                                Shruti is defined as the “interval between two notes such that the difference between them is perceptible” when translated to English from the NatyaShastra, a text from the Vedic age on the dramatic and performing arts. 
+                                Shruti can be considered setting of the tune using the tonic notes Sa (low) and Sa (high) and he mid note Pa. 
+                                According to this <a href= "">research paper</a> by Gopala K. Koduri et al. on computational approaches to understanding melody in Carnatic Music (more on that later), 
+                                “In fact, it is a well accepted notion that a note (swarasthana) is a region rather than a point [7,27]. 
+                                Thus, a fixed, stable tuning for each note is not as important as it is in, say, western classical music. 
+                                In addition, Sa, the tonic, can be any frequency.
+                                It depends on the comfort of the singer or the choice of the instrument player” (Koduri et al. 2011). 
+                                You can see this in the interactive demonstration on the right. 
+                                The shrutis don’t really align with how the piano is set up.
+                            </p>
+                        </content>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carnatic2">
+            <div class="info" style="width: 30%;">
+                <div class="sariBorder">
+                    <div class="sariBorder">
+                        <content>
+                            <h4 class="palanquin-dark-bold">More on Ragam:</h4>
+                            <p class="palanquin-regular">
+                                But ragam is arguably the most important feature in classifying Carnatic music. 
+                                Let’s dive deeper into characteristics of ragam. 
+                                Another characteristic feature of ragam is <strong>gamakkam</strong>. 
+                                Gamakkams can be identified as vibratos or sliding movements between notes. 
+                                They can be represented by discrete notes but when sung, they form a continuous pattern that is difficult to represent on paper. 
+                                There are 15 documented types of gamakkams (which I unfortunately do not know much about), and identifying them is crucial to classifying music because these gamakkams are what distinguish the emotion of the song. 
+                                Songs can have the same ragam but elicit different emotions and these gamakkams can help make distinctions between songs.
+                            </p>
+                        </content>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="palanquin-dark-regular" onclick="location.href='aicarnatic.html'">How can AI be trained for Carnatic music? -> </button>
+            <button class="palanquin-dark-regular" onclick="location.href='spotifycarnatic.html'">So how does Spotify analyze its music? -> </button>
+        </div>
+        <div class="banner"> 
+            <footer>
+                <a href="musicAlgorithms.html">
+                    back
+                </a>
+                <a href="aicarnatic.html" >
+                    next
+                </a>
+            </footer>
+        </div>
+        <script src="ragams.js"></script>
+    </body>
+</html>

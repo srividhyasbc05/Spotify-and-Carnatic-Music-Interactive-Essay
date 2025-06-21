@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lack of Inclusion in Spotify’s Metadata and its Effects on the Population:</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subpgs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Palanquin+Dark:wght@400;500;600;700&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="banner">
+            <a href="bckgrnd.html">
+            back
+         </a>
+         <header>
+         Background
+         </header>
+         <a href="carnatic.html">
+             next
+         </a>
+        </div>
+        <div class="info">
+            <div class="sariBorder">
+                <div class="sariBorder">
+                    <content>
+                        <h4 class="palanquin-dark-bold">So how does Spotify's algorithm work?</h4>
+                        <p class="palanquin-regular">Spotify has a metadataset of around 35 million songs (Moir, 2020), which is algorithmically generated. 
+                            Spotify analyzes music using:
+                            <ul class="palanquin-regular">
+                                <li>
+                                    <strong>acoustic metadata:</strong> 
+                                    which is the numerical or mathematical representation of a track’s sound
+                                </li>
+                                <li>
+                                    <strong>cultural metadata:</strong> 
+                                    which is text based information describing a listeners reactions to a track/song (derived from text on the Internet from chatrooms, blogs, and social media regarding the song)
+                                </li>
+                                <li>
+                                    <strong>explicit metadata:</strong> 
+                                    factual information like the composer, year, etc. (Moir, 2020). 
+                                </li>
+                            </ul>
+                            <br>
+                           <p class="palanquin-regular"> I looked into all of these aspects a little more in detail. 
+                            Spotify uses a <strong>collaborative filtering model</strong> to identify user activity and compare it to other users with similar activity. 
+                            This includes behavior like skipping certain songs, saving other playlists, and repeated listening. 
+                            Patricia Butina from Omnisearch provides an illustration of this phenomenon: 
+                            “When User A saves songs A, B, and C to a playlist, and User B saves songs A, B, and D, Spotify uses collaborative filtering to identify their shared music interests. 
+                            This enables Spotify to recommend songs D to User A and C to User B” (Butina, 2024). 
+                            This is supposed to help Spotify refine a taste profile for each user and capture their musical preferences, even to niche genres. 
+                            To gather the cultural metadata, they employ a Natural Language processing model that scraped the news, social media, blogs, and more to assign descriptors and keywords to songs that could describe genre and mood. 
+                            These dynamically update to accommodate for trends and associations. 
+                            However, there needs to be filtering done to this data to maintain relevance. 
+                            I began looking into how Spotify gets its acoustic metadata since the Indian film music I listen to generally derives from the Carnatic or Hindustani traditions of music which is very different from the Western paradigm. 
+                            Spotify uses a <strong>convolutional neural network (CNN)</strong> to analyze raw audio files to gather data they might miss from the cultural context and factual information. 
+                            These models categorize tracks by analyzing and dissecting song attributes like tempo, rhythm, and melody. 
+                        </p>
+                        </p>
+                        <p class="palanquin-regular">Let’s dive a little deeper into what exactly a CNN is and how it is used to analyze music. 
+                            These are essentially machine learning algorithms that analyze patterns in data. 
+                            CNNs are generally used in computer vision because it is optimized for analyzing pixel data. 
+                            Audio can be made into visual data using the <strong>Mel Spectrogram </strong>and <strong>MFCCs</strong>. 
+                            A Mel Spectrogram represents audio as a heat map, essentially, where the intensity of the color corresponds to the magnitude of a certain frequency at that point in time. 
+                            The MFCC or <strong>mel frequency cepstral coefficients</strong> of an audio signal are a small set of features that describe the shape of a spectral envelope. 
+                            These were originally used for voice recognition and used to describe the musical feature of timbre. 
+                            But why all this complication? 
+                            What makes an MFCC special is the fact that it uses a "<strong>mel-scale</strong> that closely approximates the human auditory system's response, which is more sensitive to changes in lower frequencies than higher ones” (GeeksforGeeks 2024), since humans do not perceive sound on a linear scale.
+                            Using the mel scale is particularly helpful in analyzing music because it captures the nuances of how humans hear, allowing for more accurate analysis. 
+                            You can learn more about how MFCCs work <a href= https://www.geeksforgeeks.org/nlp/mel-frequency-cepstral-coefficients-mfcc-for-speech-recognition target="_blank">here </a>.
+                            Another aspect of Spotify’s audio analysis is the <strong>Chromagram</strong>, which represents the 12 distinct pitch classes and maps the frequencies of the audio onto the 12 semitones of the Western classical scale. 
+                            This chromagram is then fed into the CNN.</p>
+                    </content>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="sariBorder">
+                <div class="sariBorder">
+                    <content>
+                        <h4 class="palanquin-dark-bold">How is this culturally biased?</h4>
+                        <p class="palanquin-regular">
+                            Notice how the chromogam classifies audio based on the <strong>Western</strong> classical scale. 
+                            Dan Ellis from Cokumbia explains that  “knowing the distribution of chroma even without the absolute frequency (i.e. the original octave) can give useful musical information about the audio -- and may even reveal perceived musical similarity that is not apparent in the original spectra” (Ellis, 2007). 
+                            Chroma features of audio allow the entire audio spectrum to be sorted into 12 bins that represent the 12 semitones (chroma) of the western musical octave. 
+                            However, as illustrated in this <a href="https://www.youtube.com/watch?v=pGntmcy_HX8" target="_blank">video</a>, when applied to Hindustani music, the key signature is based off of the western scale. 
+                            In the video, Thomas Hodgson, a music professor at UCLA says that this classification is inappropriate for the Hindustani musical tradition. 
+                            However, the music coming from India is still being understood algorithmically in this manner. 
+                            Furthermore, the video goes on to express how while the audio analysis is only a small portion of the metadata, the algorithm still isn’t optimized for certain information that could help refine the cultural and explicit metadata. 
+                            Indian musical traditions like Carnatic and Hindustani are not the only ones that don’t follow the Western musical paradigm. 
+                            If all of these other traditions are being misunderstood by the algorithm, it is also being misclassified which could lead to the discrepancies I faced in my attempts to discover new music. 
+                        </p>
+                    </content>
+                </div>
+            </div>
+        </div>
+        <button class="palanquin-dark-regular" onclick="location.href='carnatic.html'">So how does Indian music work? -> </button>
+        <br>
+
+                
+        <div class="banner"> 
+            <footer>
+                <a href="bckgrnd.html">
+                    back
+                </a>
+                <a href="carnatic.html" >
+                    next
+                </a>
+            </footer>
+        </div>
+    </body>
+</html>

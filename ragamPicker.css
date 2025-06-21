@@ -1,0 +1,13 @@
+#carnatic2{
+    display: flex;
+    flex-wrap: row;
+}
+#ragamexplore{
+    border:4px solid #CC3F0C;
+    width: 40vw;
+    border-radius: 2vw;
+}
+#head{
+    background-color: #CC3F0C;
+    height: 50% ;
+}
