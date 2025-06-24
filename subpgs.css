@@ -75,3 +75,16 @@ a:hover{
     flex-direction: row;
     justify-content: space-around;
 }
+.imgcontainer{
+    width:60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+.imgcontainer img{
+    width: 25vh;
+    max-width: 25vh;
+    height: auto;
+}

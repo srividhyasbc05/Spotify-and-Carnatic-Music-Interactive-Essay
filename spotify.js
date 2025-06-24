@@ -20,10 +20,10 @@ const pitchClasses={0:'C',
 
 const myAnalysis= {
     0: 'Ragam(s): Karaharapriya and Reetigowlai (janya Karaharapriya)',
-    1: 'Ragam(s): Thodi, Mukhari, Kanakangi',
-    2: 'Ragam(s): Sindhubhairavi',
-    3: 'Ragam(s): Abheri',
-    4: 'Ragam(s): Brindavani Saranga',
+    1: 'Ragam(s): Thodi, Mukhari (janya Karaharapriya), Kanakangi',
+    2: 'Ragam(s): Sindhubhairavi (janya Hanumatodi)',
+    3: 'Ragam(s): Abheri (janya Karaharapriya)',
+    4: 'Ragam(s): Brindavani Saranga (janya Karaharapriya)',
 }
 
 
@@ -69,6 +69,7 @@ async function displayTrack(index) {
     const track = playlistTracks[index].track;
     const trackId = track.id;
     const trackName = track.name;
+    const trackImg = track.album.images[0].url
 
     let info=''
 
@@ -93,6 +94,11 @@ async function displayTrack(index) {
     <div class="playlistsari"></div>
     <div class="playlistsari" id="spotify"></div>
     `
+    const albumimg= document.getElementById('playlistimg')
+    albumimg.innerHTML= `<img src= ${trackImg}`
+    albumimg.style.backgroundImage = `url(${trackImg})`;
+albumimg.style.backgroundSize = 'cover';
+albumimg.style.backgroundPosition = 'center';
     const myanalysis= document.getElementById('myAnalysis')
     if (index==0){
         info= myAnalysis[0]
